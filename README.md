@@ -184,3 +184,14 @@ Exemplo:
 RELEASE SAVEPOINT nome_do_ponto;
 ```
 
+---
+
+## Materiais:
+
+https://sql-island.informatik.uni-kl.de/ - Game SQL
+
+Esses em inglês
+
+https://mystery.knightlab.com/
+
+https://sqlzoo.net/wiki/SQL_Tutorial
