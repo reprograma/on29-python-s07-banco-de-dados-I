@@ -190,6 +190,7 @@ INSERT INTO votos (id_usuario, id_livro, data_voto) VALUES (1, 3, '2024-05-10 10
 
 ## Exercício 10
 
+Este exercício e uma previa do exercício de casa:
 
 ```sql
 -- Criar a tabela 'votos'
@@ -224,6 +225,7 @@ FROM votos;
 
 ```
 
+---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
 
