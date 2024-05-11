@@ -47,6 +47,9 @@ Esses são os tipos de dados básicos do SQLite. Cada tipo de dados tem suas pr�
 
 ## Comandos SQL por Categoria
 
+
+![comando SQL](assets/tipos_ling.png)
+
 ### DDL (Data Definition Language)
 
 DDL (Data Definition Language)
