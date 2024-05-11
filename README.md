@@ -188,7 +188,9 @@ RELEASE SAVEPOINT nome_do_ponto;
 
 ## Materiais:
 
-https://sql-island.informatik.uni-kl.de/ - Game SQL
+Game SQL
+
+https://sql-island.informatik.uni-kl.de/
 
 Esses em inglês
 
