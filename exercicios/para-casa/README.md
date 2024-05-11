@@ -1,10 +1,30 @@
 # Exercício de Casa 🏠 
 
-## Nome do Exercicio
+### Gerenciamento de Estoque de Livros
 
-- Explicação do exercício: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci.
-Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. 
+Imagine que você está desenvolvendo um sistema de gerenciamento de estoque para uma livraria online. Você precisa criar uma tabela para armazenar informações sobre o estoque de livros disponíveis e depois escrever consultas SQL para realizar operações básicas de gerenciamento de estoque.
+
+**Problema:**
+
+Você precisa criar uma tabela chamada `estoque` para armazenar as seguintes informações sobre o estoque de livros:
+
+- `id`: Identificador único para cada registro de estoque (inteiro, chave primária).
+- `livro_id`: Identificador do livro (chave estrangeira referenciando a tabela `livros`).
+- `quantidade`: Quantidade disponível em estoque (inteiro).
+
+Além disso, você deve inserir alguns registros de estoque para teste e, em seguida, escrever consultas SQL para realizar as seguintes operações:
+
+1. Obter a quantidade disponível em estoque para um determinado livro.
+2. Adicionar unidades ao estoque de um livro específico.
+3. Remover unidades do estoque de um livro específico.
+
+Escreva o código SQL necessário para:
+
+1. Criar a tabela `estoque`.
+2. Inserir alguns registros de estoque para teste.
+3. Escrever consultas SQL para as operações especificadas.
+
+Espero que este exercício seja útil para praticar SQL! Se precisar de mais alguma coisa, estou à disposição.
 ---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
