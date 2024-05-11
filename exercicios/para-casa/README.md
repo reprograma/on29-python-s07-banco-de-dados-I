@@ -27,8 +27,6 @@ Escreva o código SQL necessário para:
 Espero que este exercício seja útil para praticar SQL! Se precisar de mais alguma coisa, estou à disposição.
 ---
 
-Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
-
 - [ ] Fiz o fork do repositório.
 - [ ] Clonei o fork na minha máquina (`git clone url-do-meu-fork`).
 - [ ] Resolvi o exercício.
