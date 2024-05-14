@@ -186,6 +186,50 @@ INSERT INTO votos (id_usuario, id_livro, data_voto) VALUES (1, 1, '2024-05-10 08
 INSERT INTO votos (id_usuario, id_livro, data_voto) VALUES (2, 2, '2024-05-10 09:45:00');  -- Voto do usuário 2 para o livro 2
 INSERT INTO votos (id_usuario, id_livro, data_voto) VALUES (1, 3, '2024-05-10 10:15:00');  -- Voto do usuário 1 para o livro 3
 ```
+1. Contar o número total de votos recebidos por cada livro.
+
+````SQL
+SELECT id_livro, COUNT(*) AS total_votos 
+FROM votos 
+GROUP BY id_livro;
+
+2. Identificar os livros mais votados.
+
+````SQL
+SELECT id_livro, COUNT(*) AS mais_votados 
+FROM votos 
+GROUP BY id_livro
+ORDER BY mais_votados DESC;
+
+2.1. Mostrar o nome dos livros mais votados
+
+````SQL
+SELECT
+	livros.titulo,
+    livros.autor, COUNT(*) AS total_votos
+FROM
+	votos
+JOIN
+	livros ON votos.id_livro = livros.id
+ GROUP BY id_livro
+ ORDER BY total_votos DESC;
+
+
+3. Verificar se um determinado usuário já votou em um determinado livro.
+
+````SQL
+
+SELECT COUNT(*) AS votou
+FROM votos
+WHERE id_usuario = 1 AND id_livro = 1;
+
+
+4. Obter a lista de livros votados por um usuário específico.
+
+SELECT id_livro
+FROM votos
+WHERE id_usuario = 3
+
 ---
 
 ## Exercício 10
@@ -197,7 +241,8 @@ Este exercício e uma previa do exercício de casa:
 CREATE TABLE votos (
     id INTEGER PRIMARY KEY,
     id_usuario INTEGER,
-    estoque INTEGER,
+    id_livro INTERGER,
+    estoque INTEGER
 );
 
 -- Inserir alguns registros de exemplo na tabela 'votos'
