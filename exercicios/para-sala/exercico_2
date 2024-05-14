@@ -1,0 +1,3 @@
+INSERT INTO alunos (nome, idade) VALUES ('João', 20);
+INSERT INTO alunos (nome, idade) VALUES ('Maria', 22);
+INSERT INTO alunos (nome, idade) VALUES ('Pedro', 19);
