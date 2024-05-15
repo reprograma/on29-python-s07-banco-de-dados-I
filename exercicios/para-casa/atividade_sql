@@ -1,0 +1,26 @@
+# Criando a tabela de estoque:
+CREATE TABLE estoque (
+    id INTEGER PRIMARY KEY,
+    quantidade INTEGER,
+    livro_id INTEGER,
+    FOREIGN KEY (livro_id) REFERENCES livros(id)
+);
+
+# Inserindo informações na tabela:
+INSERT INTO estoque (livro_id, quantidade) VALUES (1, 5); 
+INSERT INTO estoque (livro_id, quantidade) VALUES (2, 20); 
+INSERT INTO estoque (livro_id, quantidade) VALUES (3, 8); 
+
+# Adicionando o nome dos livros na tabela para entender melhor a quais livros estamos nos referindo.
+SELECT estoque.id, livros.titulo, estoque.quantidade
+FROM estoque
+JOIN livros ON estoque.livro_id = livros.id;
+
+# Vendo a quantidade que contem de um livro especifico no estoque(eu escolhi o 1).
+select quantidade from estoque where livro_id = 1;
+
+# Atualizando a quantidade de livros que possui no estoque.
+update estoque set quantidade = 40 where id = 2;
+
+# Removendo unidades do estoque.
+UPDATE estoque SET quantidade = quantidade - 5 WHERE livro_id = 1;
