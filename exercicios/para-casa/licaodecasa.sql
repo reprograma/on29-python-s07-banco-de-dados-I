@@ -85,7 +85,7 @@ SELECT COUNT(livros_id) FROM estoque; -- comando mostra a quantidade total de re
 
 --Inserindo mais um registro na tabela livros para aumentar a quantidade de opções
 INSERT INTO livros (titulo, autor, ano_publicacao, preco) VALUES ('Atonement', 'Ian McEwan', 2001, 111.99);
-NSERT INTO estoque (id, livros_id, quantidade) VALUES (4, 4, 7);
+INSERT INTO estoque (id, livros_id, quantidade) VALUES (4, 4, 7);
 
 --Rodar novamente o comando:
 --1
