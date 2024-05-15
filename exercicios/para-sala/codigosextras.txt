@@ -1,0 +1,62 @@
+Codigos para SQL
+
+
+SELECT id_livro, COUNT(*) AS total_votos
+FROM votos
+GROUP BY id_livro
+
+SELECT id_livro, COUNT(*) as mais_votados
+FROM votos
+GROUP BY id_livro
+ORDER BY mais_votados DESC
+
+
+
+SELECT
+	livros.titulo,
+    livros.autor,
+    votos.data_voto,
+    votos.id_usuario
+FROM
+	votos
+JOIN
+	livros ON votos.id_livro = livros.id;
+
+
+Pra ver com o nome do livro 
+Correlacionamos com a tabela que continha os nomes
+
+SELECT
+	livros.titulo,
+    livros.autor,
+    votos.data_voto,
+    votos.id_usuario, COUNT(*) AS total_votos
+FROM
+	votos
+JOIN
+	livros ON votos.id_livro = livros.id
+GROUP BY id_livro;
+
+
+Com menos campos pra atividade ficar mais clear
+SELECT 
+    livros.titulo, 
+    livros.autor, Count(*) AS total_votos
+FROM 
+    votos
+JOIN 
+    livros ON votos.id_livro = livros.id
+GROUP by id_livro
+ORDER by total_votos DESC;
+
+Em qual livros determinado usuaario votou
+SELECT COUNT(*) As votou
+from votos
+WHERE id_usuario = 2 and id_livro = 2
+
+
+
+achar em quem o usuario votou
+SELECT id_livro
+FROM votos
+WHERE id_usuario = 0
